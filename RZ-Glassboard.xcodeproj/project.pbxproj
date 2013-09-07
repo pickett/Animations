@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B3AF6C17DBA90200DB55ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6B17DBA90200DB55ED /* Foundation.framework */; };
+		A1B3AF6E17DBA90200DB55ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */; };
+		A1B3AF7017DBA90200DB55ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6F17DBA90200DB55ED /* UIKit.framework */; };
+		A1B3AF7617DBA90200DB55ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF7417DBA90200DB55ED /* InfoPlist.strings */; };
+		A1B3AF7817DBA90200DB55ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF7717DBA90200DB55ED /* main.m */; };
+		A1B3AF7C17DBA90200DB55ED /* RZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */; };
+		A1B3AF7F17DBA90200DB55ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF7D17DBA90200DB55ED /* Main.storyboard */; };
+		A1B3AF8217DBA90200DB55ED /* RZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF8117DBA90200DB55ED /* RZViewController.m */; };
+		A1B3AF8417DBA90200DB55ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF8317DBA90200DB55ED /* Images.xcassets */; };
+		A1B3AF8B17DBA90300DB55ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF8A17DBA90300DB55ED /* XCTest.framework */; };
+		A1B3AF8C17DBA90300DB55ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6B17DBA90200DB55ED /* Foundation.framework */; };
+		A1B3AF8D17DBA90300DB55ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6F17DBA90200DB55ED /* UIKit.framework */; };
+		A1B3AF9517DBA90300DB55ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */; };
+		A1B3AF9717DBA90300DB55ED /* RZ_GlassboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF9617DBA90300DB55ED /* RZ_GlassboardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B3AF8E17DBA90300DB55ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B3AF6017DBA90200DB55ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B3AF6717DBA90200DB55ED;
+			remoteInfo = "RZ-Glassboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B3AF6817DBA90200DB55ED /* RZ-Glassboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RZ-Glassboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B3AF6B17DBA90200DB55ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1B3AF6F17DBA90200DB55ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1B3AF7317DBA90200DB55ED /* RZ-Glassboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RZ-Glassboard-Info.plist"; sourceTree = "<group>"; };
+		A1B3AF7517DBA90200DB55ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B3AF7717DBA90200DB55ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1B3AF7917DBA90200DB55ED /* RZ-Glassboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RZ-Glassboard-Prefix.pch"; sourceTree = "<group>"; };
+		A1B3AF7A17DBA90200DB55ED /* RZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZAppDelegate.h; sourceTree = "<group>"; };
+		A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZAppDelegate.m; sourceTree = "<group>"; };
+		A1B3AF7E17DBA90200DB55ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1B3AF8017DBA90200DB55ED /* RZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZViewController.h; sourceTree = "<group>"; };
+		A1B3AF8117DBA90200DB55ED /* RZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZViewController.m; sourceTree = "<group>"; };
+		A1B3AF8317DBA90200DB55ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1B3AF8917DBA90300DB55ED /* RZ-GlassboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RZ-GlassboardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B3AF8A17DBA90300DB55ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A1B3AF9217DBA90300DB55ED /* RZ-GlassboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RZ-GlassboardTests-Info.plist"; sourceTree = "<group>"; };
+		A1B3AF9417DBA90300DB55ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B3AF9617DBA90300DB55ED /* RZ_GlassboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZ_GlassboardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B3AF6517DBA90200DB55ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF6E17DBA90200DB55ED /* CoreGraphics.framework in Frameworks */,
+				A1B3AF7017DBA90200DB55ED /* UIKit.framework in Frameworks */,
+				A1B3AF6C17DBA90200DB55ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B3AF8617DBA90300DB55ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF8B17DBA90300DB55ED /* XCTest.framework in Frameworks */,
+				A1B3AF8D17DBA90300DB55ED /* UIKit.framework in Frameworks */,
+				A1B3AF8C17DBA90300DB55ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B3AF5F17DBA90200DB55ED = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF7117DBA90200DB55ED /* RZ-Glassboard */,
+				A1B3AF9017DBA90300DB55ED /* RZ-GlassboardTests */,
+				A1B3AF6A17DBA90200DB55ED /* Frameworks */,
+				A1B3AF6917DBA90200DB55ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B3AF6917DBA90200DB55ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF6817DBA90200DB55ED /* RZ-Glassboard.app */,
+				A1B3AF8917DBA90300DB55ED /* RZ-GlassboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B3AF6A17DBA90200DB55ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF6B17DBA90200DB55ED /* Foundation.framework */,
+				A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */,
+				A1B3AF6F17DBA90200DB55ED /* UIKit.framework */,
+				A1B3AF8A17DBA90300DB55ED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B3AF7117DBA90200DB55ED /* RZ-Glassboard */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF7A17DBA90200DB55ED /* RZAppDelegate.h */,
+				A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */,
+				A1B3AF7D17DBA90200DB55ED /* Main.storyboard */,
+				A1B3AF8017DBA90200DB55ED /* RZViewController.h */,
+				A1B3AF8117DBA90200DB55ED /* RZViewController.m */,
+				A1B3AF8317DBA90200DB55ED /* Images.xcassets */,
+				A1B3AF7217DBA90200DB55ED /* Supporting Files */,
+			);
+			path = "RZ-Glassboard";
+			sourceTree = "<group>";
+		};
+		A1B3AF7217DBA90200DB55ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF7317DBA90200DB55ED /* RZ-Glassboard-Info.plist */,
+				A1B3AF7417DBA90200DB55ED /* InfoPlist.strings */,
+				A1B3AF7717DBA90200DB55ED /* main.m */,
+				A1B3AF7917DBA90200DB55ED /* RZ-Glassboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B3AF9017DBA90300DB55ED /* RZ-GlassboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF9617DBA90300DB55ED /* RZ_GlassboardTests.m */,
+				A1B3AF9117DBA90300DB55ED /* Supporting Files */,
+			);
+			path = "RZ-GlassboardTests";
+			sourceTree = "<group>";
+		};
+		A1B3AF9117DBA90300DB55ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AF9217DBA90300DB55ED /* RZ-GlassboardTests-Info.plist */,
+				A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B3AF6717DBA90200DB55ED /* RZ-Glassboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B3AF9A17DBA90300DB55ED /* Build configuration list for PBXNativeTarget "RZ-Glassboard" */;
+			buildPhases = (
+				A1B3AF6417DBA90200DB55ED /* Sources */,
+				A1B3AF6517DBA90200DB55ED /* Frameworks */,
+				A1B3AF6617DBA90200DB55ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RZ-Glassboard";
+			productName = "RZ-Glassboard";
+			productReference = A1B3AF6817DBA90200DB55ED /* RZ-Glassboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B3AF8817DBA90300DB55ED /* RZ-GlassboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B3AF9D17DBA90300DB55ED /* Build configuration list for PBXNativeTarget "RZ-GlassboardTests" */;
+			buildPhases = (
+				A1B3AF8517DBA90300DB55ED /* Sources */,
+				A1B3AF8617DBA90300DB55ED /* Frameworks */,
+				A1B3AF8717DBA90300DB55ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1B3AF8F17DBA90300DB55ED /* PBXTargetDependency */,
+			);
+			name = "RZ-GlassboardTests";
+			productName = "RZ-GlassboardTests";
+			productReference = A1B3AF8917DBA90300DB55ED /* RZ-GlassboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B3AF6017DBA90200DB55ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RZ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ben Johnson";
+				TargetAttributes = {
+					A1B3AF8817DBA90300DB55ED = {
+						TestTargetID = A1B3AF6717DBA90200DB55ED;
+					};
+				};
+			};
+			buildConfigurationList = A1B3AF6317DBA90200DB55ED /* Build configuration list for PBXProject "RZ-Glassboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B3AF5F17DBA90200DB55ED;
+			productRefGroup = A1B3AF6917DBA90200DB55ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B3AF6717DBA90200DB55ED /* RZ-Glassboard */,
+				A1B3AF8817DBA90300DB55ED /* RZ-GlassboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B3AF6617DBA90200DB55ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF8417DBA90200DB55ED /* Images.xcassets in Resources */,
+				A1B3AF7617DBA90200DB55ED /* InfoPlist.strings in Resources */,
+				A1B3AF7F17DBA90200DB55ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B3AF8717DBA90300DB55ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF9517DBA90300DB55ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B3AF6417DBA90200DB55ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF7C17DBA90200DB55ED /* RZAppDelegate.m in Sources */,
+				A1B3AF8217DBA90200DB55ED /* RZViewController.m in Sources */,
+				A1B3AF7817DBA90200DB55ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B3AF8517DBA90300DB55ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B3AF9717DBA90300DB55ED /* RZ_GlassboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B3AF8F17DBA90300DB55ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B3AF6717DBA90200DB55ED /* RZ-Glassboard */;
+			targetProxy = A1B3AF8E17DBA90300DB55ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1B3AF7417DBA90200DB55ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B3AF7517DBA90200DB55ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1B3AF7D17DBA90200DB55ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B3AF7E17DBA90200DB55ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B3AF9417DBA90300DB55ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B3AF9817DBA90300DB55ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1B3AF9917DBA90300DB55ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B3AF9B17DBA90300DB55ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZ-Glassboard/RZ-Glassboard-Prefix.pch";
+				INFOPLIST_FILE = "RZ-Glassboard/RZ-Glassboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1B3AF9C17DBA90300DB55ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZ-Glassboard/RZ-Glassboard-Prefix.pch";
+				INFOPLIST_FILE = "RZ-Glassboard/RZ-Glassboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1B3AF9E17DBA90300DB55ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RZ-Glassboard.app/RZ-Glassboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZ-Glassboard/RZ-Glassboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RZ-GlassboardTests/RZ-GlassboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A1B3AF9F17DBA90300DB55ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RZ-Glassboard.app/RZ-Glassboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZ-Glassboard/RZ-Glassboard-Prefix.pch";
+				INFOPLIST_FILE = "RZ-GlassboardTests/RZ-GlassboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B3AF6317DBA90200DB55ED /* Build configuration list for PBXProject "RZ-Glassboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B3AF9817DBA90300DB55ED /* Debug */,
+				A1B3AF9917DBA90300DB55ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B3AF9A17DBA90300DB55ED /* Build configuration list for PBXNativeTarget "RZ-Glassboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B3AF9B17DBA90300DB55ED /* Debug */,
+				A1B3AF9C17DBA90300DB55ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1B3AF9D17DBA90300DB55ED /* Build configuration list for PBXNativeTarget "RZ-GlassboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B3AF9E17DBA90300DB55ED /* Debug */,
+				A1B3AF9F17DBA90300DB55ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B3AF6017DBA90200DB55ED /* Project object */;
+}
