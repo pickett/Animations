@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface RZViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UIButton *createAccountButton;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *sloganImageView;
 
+- (IBAction)signInPressed:(id)sender;
+- (IBAction)createAccountPressed:(id)sender;
 @end

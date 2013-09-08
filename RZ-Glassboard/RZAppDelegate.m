@@ -7,12 +7,25 @@
 //
 
 #import "RZAppDelegate.h"
+#import "RZViewController.h"
 
 @implementation RZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    RZViewController *rzViewController = [[RZViewController alloc] initWithNibName:@"RZViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rzViewController];
+    
+    
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+    
+    
     return YES;
 }
 							
