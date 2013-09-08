@@ -12,7 +12,6 @@
 
 #define signInInitialY 600
 #define createAccountInitialY 660
-#define bounceHeight 15
 
 #define signInButtonY 430
 #define createAccountButtonY 498
@@ -23,7 +22,10 @@
 {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
-    
+    [self stageElements];
+}
+
+- (void)stageElements{
     
     // offset our buttons
     self.createAccountButton.frame =
@@ -60,14 +62,13 @@
 //               -200,
 //               self.signInButton.frame.size.width,
 //               self.signInButton.frame.size.height);
-
+    
 }
 
 
 - (void)viewDidAppear:(BOOL)animated{
     
-    [self awesomerAnimation
-     ];
+    [self awesomerAnimation];
     
 }
 
@@ -92,7 +93,7 @@
     } completion:^(BOOL finished) {
         
         // Reset the view and cycle animation
-        [self performSelector:@selector(resetView)
+        [self performSelector:@selector(stageElements)
                    withObject:nil afterDelay:1.0];
         
         [self performSelector:@selector(basicAnimation)
@@ -132,7 +133,7 @@
         self.sloganImageView.alpha = 1.0;
         
         
-        [self performSelector:@selector(resetView)
+        [self performSelector:@selector(stageElements)
                    withObject:nil afterDelay:1.0];
         
         [self performSelector:@selector(goodAnimation)
@@ -146,11 +147,11 @@
 - (void)betterAnimation{
     
     
-    // Bounce on Y coordinate
+    // Will be animating position.y for a vertical bounce
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position.y"];
     
     // Initial value where the animation will start
-    animation.fromValue = [NSNumber numberWithFloat:self.signInButton.center.y];
+    animation.fromValue = [NSNumber numberWithFloat:self.signInButton.center.y]; // currently staged offscreen
     
     // max value to boucne to
     animation.toValue = [NSNumber numberWithFloat:signInButtonY];
@@ -159,7 +160,7 @@
     animation.fillMode = kCAFillModeBoth;
     animation.duration = 0.5;
     
-    // a bezier curve between the to and from values
+    // specifies the bezier curve between the to and from values
     [animation setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.5 :1.3 :0.6 :1]];
     
     self.signInButton.center = CGPointMake(self.signInButton.center.x, signInButtonY);
@@ -173,12 +174,18 @@
             self.sloganImageView.alpha = 1.0;
             self.logoImageView.alpha = 1.0;
             
+            
+            // reset code
+            [self performSelector:@selector(stageElements) withObject:nil afterDelay:2.0];
+            [self performSelector:@selector(betterAnimation) withObject:nil afterDelay:3.2];
+            
         }];
         
     }];
     
     
-    [self.signInButton.layer addAnimation:animation forKey:@"bounce"];
+    [self.signInButton.layer addAnimation:animation
+                                   forKey:@"bounce"];
     
   
     
@@ -196,14 +203,6 @@
 
 
     
-    
-    
-   
-    
-    
-    
-   
-
 }
 
 - (void)awesomeAnimation{
@@ -246,9 +245,16 @@
     
     
 
-    // Animate the Slogan and Logo
-    self.sloganImageView.center = CGPointMake(self.sloganImageView.center.x, self.sloganImageView.center.y + 40);
-    self.logoImageView.center = CGPointMake(self.logoImageView.center.x, self.logoImageView.center.y + 40);
+    // Set the Slogan and Logo below current position
+    self.sloganImageView.center =
+    
+            CGPointMake(self.sloganImageView.center.x,
+                        self.sloganImageView.center.y + 40);
+    
+    self.logoImageView.center =
+    
+            CGPointMake(self.logoImageView.center.x,
+                        self.logoImageView.center.y + 40);
     
     
     [UIView animateWithDuration:0.5 animations:^{
@@ -256,15 +262,23 @@
         self.sloganImageView.alpha = 1.0;
         self.logoImageView.alpha = 1.0;
         
-        self.sloganImageView.center = CGPointMake(self.sloganImageView.center.x, self.sloganImageView.center.y - 40);
-        self.logoImageView.center = CGPointMake(self.logoImageView.center.x, self.logoImageView.center.y - 40);
+        // return to original positioning
+        self.sloganImageView.center =
+        
+                CGPointMake(self.sloganImageView.center.x,
+                            self.sloganImageView.center.y - 40);
+        
+        self.logoImageView.center =
+        
+                CGPointMake(self.logoImageView.center.x,
+                            self.logoImageView.center.y - 40);
         
     }];
     
     
     
     // reset code
-    [self performSelector:@selector(resetView) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(stageElements) withObject:nil afterDelay:2.0];
     [self performSelector:@selector(awesomeAnimation) withObject:nil afterDelay:3.2];
 
     
@@ -272,31 +286,18 @@
 
 - (void)awesomerAnimation{
     
-    
-    
-    // Bounce on Y coordinate
+    // Same animation as Awesome Animation
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position.y"];
-    
-    // Initial value where the animation will start
     animation.fromValue = [NSNumber numberWithFloat:self.signInButton.center.y];
-    
-    // max value to boucne to
     animation.toValue = [NSNumber numberWithFloat:signInButtonY];
-    
-    // specified to ensure that the animation doesn't reset its position once it is done
     animation.fillMode = kCAFillModeBoth;
     animation.duration = 0.5;
+    
+    // New start Time
     animation.beginTime = CACurrentMediaTime() + 0.4;
-
-    // a bezier curve between the to and from values
     [animation setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.5 :1.3 :0.6 :1]];
-    
     self.signInButton.center = CGPointMake(self.signInButton.center.x, signInButtonY);
-    
     [self.signInButton.layer addAnimation:animation forKey:@"bounce"];
-    
-    
-    
     
     // Same Animation as Above
     CABasicAnimation *animationTwo = [CABasicAnimation animationWithKeyPath:@"position.y"];
@@ -304,14 +305,14 @@
     animationTwo.toValue = [NSNumber numberWithFloat:createAccountButtonY];
     animationTwo.fillMode = kCAFillModeBoth;
     animationTwo.duration = 0.5;
+    
+    // New Start Time before Sign In Button
     animationTwo.beginTime = CACurrentMediaTime() + 0.1;
     [animationTwo setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.5 :1.3 :0.6 :1]];
     self.createAccountButton.center = CGPointMake(self.createAccountButton.center.x, createAccountButtonY);
     [self.createAccountButton.layer addAnimation:animationTwo forKey:@"bounce"];
     
-    
-    
-    // Animate the Slogan and Logo
+
     self.sloganImageView.center = CGPointMake(self.sloganImageView.center.x, self.sloganImageView.center.y + 40);
     self.logoImageView.center = CGPointMake(self.logoImageView.center.x, self.logoImageView.center.y + 40);
     
@@ -334,28 +335,11 @@
 
     
     // reset code
-    [self performSelector:@selector(resetView) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(stageElements) withObject:nil afterDelay:2.0];
     [self performSelector:@selector(awesomerAnimation) withObject:nil afterDelay:3.2];
     
     
 }
-
-
-
-
-
-- (void)resetView{
-    
-    // offset our buttons
-    self.createAccountButton.frame = CGRectMake(self.createAccountButton.frame.origin.x, createAccountInitialY , self.createAccountButton.frame.size.width, self.createAccountButton.frame.size.height);
-    self.signInButton.frame = CGRectMake(self.signInButton.frame.origin.x, signInInitialY , self.signInButton.frame.size.width, self.signInButton.frame.size.height);
-    
-    // alpha values for elements
-    self.logoImageView.alpha = 0.0;
-    self.sloganImageView.alpha = 0.0;
-    
-}
-
 
 - (void)didReceiveMemoryWarning
 {

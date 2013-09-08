@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *textFieldBackgroundImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
+@property (weak, nonatomic) IBOutlet UIImageView *forgotPasswordButton;
 
 
 - (IBAction)signInPressed:(id)sender;
