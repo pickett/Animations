@@ -26,49 +26,51 @@
 }
 
 - (void)stageElements{
+
+    // alpha values for elements
+    self.logoImageView.alpha = 0.0;
+    self.sloganImageView.alpha = 0.0;
+    
     
     // offset our buttons
     self.createAccountButton.frame =
     
     CGRectMake(self.createAccountButton.frame.origin.x,
-               createAccountInitialY,
+               -200 ,
                self.createAccountButton.frame.size.width,
                self.createAccountButton.frame.size.height);
     
     self.signInButton.frame =
     
     CGRectMake(self.signInButton.frame.origin.x,
-               signInInitialY,
+               -200,
                self.signInButton.frame.size.width,
                self.signInButton.frame.size.height);
     
-    
-    // alpha values for elements
-    self.logoImageView.alpha = 0.0;
-    self.sloganImageView.alpha = 0.0;
-    
-    
-    // bad offset
+    // offset our buttons
 //    self.createAccountButton.frame =
 //    
 //    CGRectMake(self.createAccountButton.frame.origin.x,
-//               -200 ,
+//               createAccountInitialY,
 //               self.createAccountButton.frame.size.width,
 //               self.createAccountButton.frame.size.height);
 //    
 //    self.signInButton.frame =
 //    
 //    CGRectMake(self.signInButton.frame.origin.x,
-//               -200,
+//               signInInitialY,
 //               self.signInButton.frame.size.width,
 //               self.signInButton.frame.size.height);
+
+    
+    
     
 }
 
 
 - (void)viewDidAppear:(BOOL)animated{
     
-    [self awesomerAnimation];
+    [self basicAnimation];
     
 }
 
@@ -153,7 +155,7 @@
     // Initial value where the animation will start
     animation.fromValue = [NSNumber numberWithFloat:self.signInButton.center.y]; // currently staged offscreen
     
-    // max value to boucne to
+    // final resting value
     animation.toValue = [NSNumber numberWithFloat:signInButtonY];
     
     // specified to ensure that the animation doesn't reset its position once it is done

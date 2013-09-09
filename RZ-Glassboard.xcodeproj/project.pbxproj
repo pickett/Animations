@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17FBB3A17DBF4A600B69251 /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A17FBB3917DBF4A600B69251 /* CAAnimation+Blocks.m */; };
+		A17FBB3C17DBF54200B69251 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17FBB3B17DBF54200B69251 /* QuartzCore.framework */; };
+		A1896C0F17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1896C0D17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed@2x.png */; };
+		A1896C1017DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = A1896C0E17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed.png */; };
+		A1896C1317DD16DF00EA3DB6 /* Forgot_Password_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1896C1117DD16DF00EA3DB6 /* Forgot_Password_Button@2x.png */; };
+		A1896C1417DD16DF00EA3DB6 /* Forgot_Password_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A1896C1217DD16DF00EA3DB6 /* Forgot_Password_Button.png */; };
 		A1B3AF6C17DBA90200DB55ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6B17DBA90200DB55ED /* Foundation.framework */; };
 		A1B3AF6E17DBA90200DB55ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */; };
 		A1B3AF7017DBA90200DB55ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6F17DBA90200DB55ED /* UIKit.framework */; };
 		A1B3AF7617DBA90200DB55ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF7417DBA90200DB55ED /* InfoPlist.strings */; };
 		A1B3AF7817DBA90200DB55ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF7717DBA90200DB55ED /* main.m */; };
 		A1B3AF7C17DBA90200DB55ED /* RZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */; };
-		A1B3AF7F17DBA90200DB55ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF7D17DBA90200DB55ED /* Main.storyboard */; };
 		A1B3AF8217DBA90200DB55ED /* RZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF8117DBA90200DB55ED /* RZViewController.m */; };
 		A1B3AF8417DBA90200DB55ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF8317DBA90200DB55ED /* Images.xcassets */; };
 		A1B3AF8B17DBA90300DB55ED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF8A17DBA90300DB55ED /* XCTest.framework */; };
@@ -21,6 +26,25 @@
 		A1B3AF8D17DBA90300DB55ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B3AF6F17DBA90200DB55ED /* UIKit.framework */; };
 		A1B3AF9517DBA90300DB55ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */; };
 		A1B3AF9717DBA90300DB55ED /* RZ_GlassboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AF9617DBA90300DB55ED /* RZ_GlassboardTests.m */; };
+		A1B3AFA117DBA96500DB55ED /* RZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA017DBA96500DB55ED /* RZViewController.xib */; };
+		A1B3AFA817DBAC4300DB55ED /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA317DBAC4300DB55ED /* Background@2x.png */; };
+		A1B3AFA917DBAC4300DB55ED /* Create Account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA417DBAC4300DB55ED /* Create Account@2x.png */; };
+		A1B3AFAA17DBAC4300DB55ED /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA517DBAC4300DB55ED /* Logo@2x.png */; };
+		A1B3AFAB17DBAC4300DB55ED /* Sign_In_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA617DBAC4300DB55ED /* Sign_In_Button@2x.png */; };
+		A1B3AFAC17DBAC4300DB55ED /* Text Box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFA717DBAC4300DB55ED /* Text Box@2x.png */; };
+		A1B3AFAF17DBAD8A00DB55ED /* Text Box.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFAD17DBAD8A00DB55ED /* Text Box.png */; };
+		A1B3AFB017DBAD8A00DB55ED /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFAE17DBAD8A00DB55ED /* Logo.png */; };
+		A1B3AFB217DBADAF00DB55ED /* Sign_In_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFB117DBADAF00DB55ED /* Sign_In_Button.png */; };
+		A1B3AFB417DBADEA00DB55ED /* Create Account.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFB317DBADEA00DB55ED /* Create Account.png */; };
+		A1B3AFB617DBAE1C00DB55ED /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B3AFB517DBAE1C00DB55ED /* Background.png */; };
+		A1B6504317DCCF2100B7DEB5 /* RZSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B6504117DCCF2100B7DEB5 /* RZSignInViewController.m */; };
+		A1B6504417DCCF2100B7DEB5 /* RZSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504217DCCF2100B7DEB5 /* RZSignInViewController.xib */; };
+		A1B6504C17DCCF9A00B7DEB5 /* Sign_In_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504617DCCF9A00B7DEB5 /* Sign_In_Background.png */; };
+		A1B6504D17DCCF9A00B7DEB5 /* Sign_In_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504717DCCF9A00B7DEB5 /* Sign_In_Background@2x.png */; };
+		A1B6504E17DCCF9A00B7DEB5 /* Sign_In_Button_Green.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504817DCCF9A00B7DEB5 /* Sign_In_Button_Green.png */; };
+		A1B6504F17DCCF9A00B7DEB5 /* Sign_In_Button_Green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504917DCCF9A00B7DEB5 /* Sign_In_Button_Green@2x.png */; };
+		A1B6505017DCCF9A00B7DEB5 /* Text_Fields.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504A17DCCF9A00B7DEB5 /* Text_Fields.png */; };
+		A1B6505117DCCF9A00B7DEB5 /* Text_Fields@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B6504B17DCCF9A00B7DEB5 /* Text_Fields@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A17FBB3817DBF4A600B69251 /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
+		A17FBB3917DBF4A600B69251 /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
+		A17FBB3B17DBF54200B69251 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A1896C0D17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign_In_Button_Green_Pressed@2x.png"; sourceTree = "<group>"; };
+		A1896C0E17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sign_In_Button_Green_Pressed.png; sourceTree = "<group>"; };
+		A1896C1117DD16DF00EA3DB6 /* Forgot_Password_Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Forgot_Password_Button@2x.png"; sourceTree = "<group>"; };
+		A1896C1217DD16DF00EA3DB6 /* Forgot_Password_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Forgot_Password_Button.png; sourceTree = "<group>"; };
 		A1B3AF6817DBA90200DB55ED /* RZ-Glassboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RZ-Glassboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B3AF6B17DBA90200DB55ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +75,6 @@
 		A1B3AF7917DBA90200DB55ED /* RZ-Glassboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RZ-Glassboard-Prefix.pch"; sourceTree = "<group>"; };
 		A1B3AF7A17DBA90200DB55ED /* RZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZAppDelegate.h; sourceTree = "<group>"; };
 		A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZAppDelegate.m; sourceTree = "<group>"; };
-		A1B3AF7E17DBA90200DB55ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B3AF8017DBA90200DB55ED /* RZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZViewController.h; sourceTree = "<group>"; };
 		A1B3AF8117DBA90200DB55ED /* RZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZViewController.m; sourceTree = "<group>"; };
 		A1B3AF8317DBA90200DB55ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +83,26 @@
 		A1B3AF9217DBA90300DB55ED /* RZ-GlassboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RZ-GlassboardTests-Info.plist"; sourceTree = "<group>"; };
 		A1B3AF9417DBA90300DB55ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1B3AF9617DBA90300DB55ED /* RZ_GlassboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZ_GlassboardTests.m; sourceTree = "<group>"; };
+		A1B3AFA017DBA96500DB55ED /* RZViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RZViewController.xib; sourceTree = "<group>"; };
+		A1B3AFA317DBAC4300DB55ED /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		A1B3AFA417DBAC4300DB55ED /* Create Account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Create Account@2x.png"; sourceTree = "<group>"; };
+		A1B3AFA517DBAC4300DB55ED /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
+		A1B3AFA617DBAC4300DB55ED /* Sign_In_Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign_In_Button@2x.png"; sourceTree = "<group>"; };
+		A1B3AFA717DBAC4300DB55ED /* Text Box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text Box@2x.png"; sourceTree = "<group>"; };
+		A1B3AFAD17DBAD8A00DB55ED /* Text Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text Box.png"; sourceTree = "<group>"; };
+		A1B3AFAE17DBAD8A00DB55ED /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		A1B3AFB117DBADAF00DB55ED /* Sign_In_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sign_In_Button.png; sourceTree = "<group>"; };
+		A1B3AFB317DBADEA00DB55ED /* Create Account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Create Account.png"; sourceTree = "<group>"; };
+		A1B3AFB517DBAE1C00DB55ED /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		A1B6504017DCCF2100B7DEB5 /* RZSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZSignInViewController.h; sourceTree = "<group>"; };
+		A1B6504117DCCF2100B7DEB5 /* RZSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZSignInViewController.m; sourceTree = "<group>"; };
+		A1B6504217DCCF2100B7DEB5 /* RZSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RZSignInViewController.xib; sourceTree = "<group>"; };
+		A1B6504617DCCF9A00B7DEB5 /* Sign_In_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sign_In_Background.png; sourceTree = "<group>"; };
+		A1B6504717DCCF9A00B7DEB5 /* Sign_In_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign_In_Background@2x.png"; sourceTree = "<group>"; };
+		A1B6504817DCCF9A00B7DEB5 /* Sign_In_Button_Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sign_In_Button_Green.png; sourceTree = "<group>"; };
+		A1B6504917DCCF9A00B7DEB5 /* Sign_In_Button_Green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign_In_Button_Green@2x.png"; sourceTree = "<group>"; };
+		A1B6504A17DCCF9A00B7DEB5 /* Text_Fields.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Text_Fields.png; sourceTree = "<group>"; };
+		A1B6504B17DCCF9A00B7DEB5 /* Text_Fields@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Text_Fields@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17FBB3C17DBF54200B69251 /* QuartzCore.framework in Frameworks */,
 				A1B3AF6E17DBA90200DB55ED /* CoreGraphics.framework in Frameworks */,
 				A1B3AF7017DBA90200DB55ED /* UIKit.framework in Frameworks */,
 				A1B3AF6C17DBA90200DB55ED /* Foundation.framework in Frameworks */,
@@ -101,6 +152,7 @@
 		A1B3AF6A17DBA90200DB55ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A17FBB3B17DBF54200B69251 /* QuartzCore.framework */,
 				A1B3AF6B17DBA90200DB55ED /* Foundation.framework */,
 				A1B3AF6D17DBA90200DB55ED /* CoreGraphics.framework */,
 				A1B3AF6F17DBA90200DB55ED /* UIKit.framework */,
@@ -114,9 +166,12 @@
 			children = (
 				A1B3AF7A17DBA90200DB55ED /* RZAppDelegate.h */,
 				A1B3AF7B17DBA90200DB55ED /* RZAppDelegate.m */,
-				A1B3AF7D17DBA90200DB55ED /* Main.storyboard */,
 				A1B3AF8017DBA90200DB55ED /* RZViewController.h */,
 				A1B3AF8117DBA90200DB55ED /* RZViewController.m */,
+				A1B3AFA017DBA96500DB55ED /* RZViewController.xib */,
+				A1B6504017DCCF2100B7DEB5 /* RZSignInViewController.h */,
+				A1B6504117DCCF2100B7DEB5 /* RZSignInViewController.m */,
+				A1B6504217DCCF2100B7DEB5 /* RZSignInViewController.xib */,
 				A1B3AF8317DBA90200DB55ED /* Images.xcassets */,
 				A1B3AF7217DBA90200DB55ED /* Supporting Files */,
 			);
@@ -126,6 +181,9 @@
 		A1B3AF7217DBA90200DB55ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A17FBB3817DBF4A600B69251 /* CAAnimation+Blocks.h */,
+				A17FBB3917DBF4A600B69251 /* CAAnimation+Blocks.m */,
+				A1B3AFA217DBAA8F00DB55ED /* Assets */,
 				A1B3AF7317DBA90200DB55ED /* RZ-Glassboard-Info.plist */,
 				A1B3AF7417DBA90200DB55ED /* InfoPlist.strings */,
 				A1B3AF7717DBA90200DB55ED /* main.m */,
@@ -150,6 +208,49 @@
 				A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B3AFA217DBAA8F00DB55ED /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A1B6505217DCCFA100B7DEB5 /* Sign In Page */,
+				A1B6504517DCCF8D00B7DEB5 /* Main Page */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		A1B6504517DCCF8D00B7DEB5 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AFA317DBAC4300DB55ED /* Background@2x.png */,
+				A1B3AFB517DBAE1C00DB55ED /* Background.png */,
+				A1B3AFA417DBAC4300DB55ED /* Create Account@2x.png */,
+				A1B3AFB317DBADEA00DB55ED /* Create Account.png */,
+				A1B3AFA517DBAC4300DB55ED /* Logo@2x.png */,
+				A1B3AFAE17DBAD8A00DB55ED /* Logo.png */,
+				A1B3AFA617DBAC4300DB55ED /* Sign_In_Button@2x.png */,
+				A1B3AFB117DBADAF00DB55ED /* Sign_In_Button.png */,
+				A1B3AFA717DBAC4300DB55ED /* Text Box@2x.png */,
+				A1B3AFAD17DBAD8A00DB55ED /* Text Box.png */,
+			);
+			name = "Main Page";
+			sourceTree = "<group>";
+		};
+		A1B6505217DCCFA100B7DEB5 /* Sign In Page */ = {
+			isa = PBXGroup;
+			children = (
+				A1B6504617DCCF9A00B7DEB5 /* Sign_In_Background.png */,
+				A1B6504717DCCF9A00B7DEB5 /* Sign_In_Background@2x.png */,
+				A1B6504817DCCF9A00B7DEB5 /* Sign_In_Button_Green.png */,
+				A1B6504917DCCF9A00B7DEB5 /* Sign_In_Button_Green@2x.png */,
+				A1896C0D17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed@2x.png */,
+				A1896C0E17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed.png */,
+				A1896C1117DD16DF00EA3DB6 /* Forgot_Password_Button@2x.png */,
+				A1896C1217DD16DF00EA3DB6 /* Forgot_Password_Button.png */,
+				A1B6504A17DCCF9A00B7DEB5 /* Text_Fields.png */,
+				A1B6504B17DCCF9A00B7DEB5 /* Text_Fields@2x.png */,
+			);
+			name = "Sign In Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +330,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B3AFA917DBAC4300DB55ED /* Create Account@2x.png in Resources */,
+				A1B6505017DCCF9A00B7DEB5 /* Text_Fields.png in Resources */,
+				A1B3AFAA17DBAC4300DB55ED /* Logo@2x.png in Resources */,
+				A1896C1417DD16DF00EA3DB6 /* Forgot_Password_Button.png in Resources */,
+				A1B3AFA117DBA96500DB55ED /* RZViewController.xib in Resources */,
+				A1B3AFB617DBAE1C00DB55ED /* Background.png in Resources */,
 				A1B3AF8417DBA90200DB55ED /* Images.xcassets in Resources */,
+				A1B6504F17DCCF9A00B7DEB5 /* Sign_In_Button_Green@2x.png in Resources */,
+				A1B6504D17DCCF9A00B7DEB5 /* Sign_In_Background@2x.png in Resources */,
+				A1B3AFB017DBAD8A00DB55ED /* Logo.png in Resources */,
+				A1896C1017DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed.png in Resources */,
+				A1B3AFA817DBAC4300DB55ED /* Background@2x.png in Resources */,
 				A1B3AF7617DBA90200DB55ED /* InfoPlist.strings in Resources */,
-				A1B3AF7F17DBA90200DB55ED /* Main.storyboard in Resources */,
+				A1B3AFB217DBADAF00DB55ED /* Sign_In_Button.png in Resources */,
+				A1896C0F17DCE33100EA3DB6 /* Sign_In_Button_Green_Pressed@2x.png in Resources */,
+				A1B3AFAF17DBAD8A00DB55ED /* Text Box.png in Resources */,
+				A1B3AFAB17DBAC4300DB55ED /* Sign_In_Button@2x.png in Resources */,
+				A1896C1317DD16DF00EA3DB6 /* Forgot_Password_Button@2x.png in Resources */,
+				A1B3AFB417DBADEA00DB55ED /* Create Account.png in Resources */,
+				A1B3AFAC17DBAC4300DB55ED /* Text Box@2x.png in Resources */,
+				A1B6504E17DCCF9A00B7DEB5 /* Sign_In_Button_Green.png in Resources */,
+				A1B6504417DCCF2100B7DEB5 /* RZSignInViewController.xib in Resources */,
+				A1B6505117DCCF9A00B7DEB5 /* Text_Fields@2x.png in Resources */,
+				A1B6504C17DCCF9A00B7DEB5 /* Sign_In_Background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17FBB3A17DBF4A600B69251 /* CAAnimation+Blocks.m in Sources */,
 				A1B3AF7C17DBA90200DB55ED /* RZAppDelegate.m in Sources */,
 				A1B3AF8217DBA90200DB55ED /* RZViewController.m in Sources */,
 				A1B3AF7817DBA90200DB55ED /* main.m in Sources */,
+				A1B6504317DCCF2100B7DEB5 /* RZSignInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +405,6 @@
 				A1B3AF7517DBA90200DB55ED /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A1B3AF7D17DBA90200DB55ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1B3AF7E17DBA90200DB55ED /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		A1B3AF9317DBA90300DB55ED /* InfoPlist.strings */ = {
@@ -455,6 +571,7 @@
 				A1B3AF9C17DBA90300DB55ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1B3AF9D17DBA90300DB55ED /* Build configuration list for PBXNativeTarget "RZ-GlassboardTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +580,7 @@
 				A1B3AF9F17DBA90300DB55ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

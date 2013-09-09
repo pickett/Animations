@@ -32,7 +32,7 @@
 
 - (IBAction)signInPressed:(id)sender {
     
-    [self awesomeCheck];
+    [self basicCheck];
     
 }
 
@@ -84,7 +84,7 @@
     
     [self.activitySpinner stopAnimating];
     
-    //Set up the shake animation with a pathAnimation
+    //Set up the shake animation for the textView
     CAKeyframeAnimation *pathAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     
     // Cubic timing function
@@ -136,9 +136,7 @@
     //y = The y-coordinate of the end point of the curve.
     
     CGPathAddCurveToPoint(curvedPath, NULL, cp1x, cp1y, cp2x, cp2y, p3.x, p3.y);
-    CGPathAddCurveToPoint(curvedPath, NULL, cp1x, cp1y, cp2x, cp2y, p3.x, p3.y);
-    CGPathAddCurveToPoint(curvedPath, NULL, cp1x, cp1y, cp2x, cp2y, p3.x, p3.y);
-
+  
 
     pathAnimation.path = curvedPath;
     CGPathRelease(curvedPath);
@@ -146,19 +144,19 @@
     
     [pathAnimation setCompletion:^(BOOL finished) {
         
-        //  clear the password text
-        self.passwordTextField.text = @"";
-        
-        // specify a new light red color
-        UIColor *color = [UIColor colorWithRed:247.0/255.0 green:122.0/255.0 blue:127.0/255.0 alpha:1.0];
-        
-        self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Incorrect Password" attributes:@{NSForegroundColorAttributeName: color}];
-        
-        // become first responder
-        [self.passwordTextField becomeFirstResponder];
-    
-    
-        [self performSelector:@selector(bounceForgotPassword) withObject:Nil afterDelay:2.0];
+//        //  clear the password text
+//        self.passwordTextField.text = @"";
+//        
+//        // specify a new light red color
+//        UIColor *color = [UIColor colorWithRed:247.0/255.0 green:122.0/255.0 blue:127.0/255.0 alpha:1.0];
+//        
+//        self.passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Incorrect Password" attributes:@{NSForegroundColorAttributeName: color}];
+//        
+//        // become first responder
+//        [self.passwordTextField becomeFirstResponder];
+//    
+//    
+//        [self performSelector:@selector(bounceForgotPassword) withObject:Nil afterDelay:2.0];
 
         
     }];
