@@ -48,19 +48,19 @@
                self.signInButton.frame.size.height);
     
     // offset our buttons
-//    self.createAccountButton.frame =
-//    
-//    CGRectMake(self.createAccountButton.frame.origin.x,
-//               createAccountInitialY,
-//               self.createAccountButton.frame.size.width,
-//               self.createAccountButton.frame.size.height);
-//    
-//    self.signInButton.frame =
-//    
-//    CGRectMake(self.signInButton.frame.origin.x,
-//               signInInitialY,
-//               self.signInButton.frame.size.width,
-//               self.signInButton.frame.size.height);
+    self.createAccountButton.frame =
+    
+    CGRectMake(self.createAccountButton.frame.origin.x,
+               createAccountInitialY,
+               self.createAccountButton.frame.size.width,
+               self.createAccountButton.frame.size.height);
+    
+    self.signInButton.frame =
+    
+    CGRectMake(self.signInButton.frame.origin.x,
+               signInInitialY,
+               self.signInButton.frame.size.width,
+               self.signInButton.frame.size.height);
 
     
     

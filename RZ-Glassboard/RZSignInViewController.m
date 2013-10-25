@@ -9,6 +9,7 @@
 #import "RZSignInViewController.h"
 #import "CAAnimation+Blocks.h"
 
+
 @implementation RZSignInViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,9 +31,60 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+//    self.textFieldView.center = CGPointMake(480, self.textFieldView.center.y);
+//    self.signInButton.center = CGPointMake(480, self.signInButton.center.y);
+//    self.forgotPasswordButton.center = CGPointMake(480, self.forgotPasswordButton.center.y);
+
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    
+//    [UIView animateWithDuration:1.0
+//                          delay:0.0f
+//         usingSpringWithDamping:0.6
+//          initialSpringVelocity:0.8
+//                        options:UIViewAnimationOptionCurveEaseOut
+//                     animations:^{
+//                         
+//                         self.textFieldView.center = CGPointMake(160, self.textFieldView.center.y);
+//
+//                                }
+//                     completion:^(BOOL finished) { }];
+//    
+//    
+//    [UIView animateWithDuration:1.0
+//                          delay:0.1f
+//         usingSpringWithDamping:0.6
+//          initialSpringVelocity:0.8
+//                        options:UIViewAnimationOptionCurveEaseOut
+//                     animations:^{
+//                         
+//                         self.signInButton.center = CGPointMake(160, self.signInButton.center.y);
+//                         
+//                     }
+//                     completion:^(BOOL finished) { }];
+//    
+//    
+//    [UIView animateWithDuration:1.0
+//                          delay:0.2f
+//         usingSpringWithDamping:0.6
+//          initialSpringVelocity:0.8
+//                        options:UIViewAnimationOptionCurveEaseOut
+//                     animations:^{
+//                         
+//                         self.forgotPasswordButton.center = CGPointMake(160, self.forgotPasswordButton.center.y);
+//                         
+//                     }
+//                     completion:^(BOOL finished) { }];
+    
+    
+}
+
 - (IBAction)signInPressed:(id)sender {
     
-    [self basicCheck];
+    [self awesomeCheck];
     
 }
 
@@ -48,7 +100,7 @@
     [self.activitySpinner startAnimating];
     
     // simulate checking a web service
-    [self performSelector:@selector(basicFail) withObject:nil afterDelay:1.5];
+    [self performSelector:@selector(crazyFail) withObject:nil afterDelay:1.5];
     
 }
 
@@ -76,7 +128,7 @@
     
     [self.activitySpinner startAnimating];
 
-    [self performSelector:@selector(awesomeFail) withObject:nil afterDelay:1.5];
+    [self performSelector:@selector(crazyFail) withObject:nil afterDelay:1.5];
 
 }
 
@@ -201,10 +253,96 @@
     
 }
 
+
+- (void)crazyFail{
+    
+    
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    UICollisionBehavior *collisionBehaviour = [[UICollisionBehavior alloc] initWithItems:@[self.forgotPasswordButton, self.textFieldView, self.signInButton, self.activitySpinner]];
+    [collisionBehaviour setCollisionMode:UICollisionBehaviorModeBoundaries];
+    collisionBehaviour.translatesReferenceBoundsIntoBoundary = YES;
+
+    [self.animator addBehavior:collisionBehaviour];
+    
+    
+    NSArray *array = @[self.forgotPasswordButton, self.textFieldView, self.signInButton, self.activitySpinner];
+    
+    for (NSObject *obj in array) {
+     
+        
+        UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[obj] mode:UIPushBehaviorModeInstantaneous];
+        
+        pushBehavior.angle = (float)rand();
+        pushBehavior.magnitude = 5.0f;
+        
+        [self.animator addBehavior:pushBehavior];
+
+
+        pushBehavior.active = YES;
+        
+    }
+  
+
+    [self performSelector:@selector(secretMethod) withObject:Nil afterDelay:0.3];
+
+    
+}
+
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     
     self.passwordTextField.textColor = [UIColor darkGrayColor];
     self.passwordTextField.textAlignment = NSTextAlignmentLeft;
+    
+}
+
+- (void)secretMethod{
+    
+    [self.secretView setAlpha:0.0];
+
+    [self.view bringSubviewToFront:self.secretView];
+    
+    [self.secretView setTransform:CGAffineTransformMakeScale(2.0, 2.0)];
+    
+    [UIView animateWithDuration:0.3
+                          delay:0.2
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         
+                         [self.secretView setAlpha:0.2];
+                         [self.secretView setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
+                         
+                         
+                     } completion:^(BOOL finished) {
+                         
+                         
+                         [UIView animateWithDuration:0.3
+                                               delay:2.0
+                                             options:UIViewAnimationOptionCurveEaseInOut
+                                          animations:^{
+                                              
+                                              
+                                              [self.secretView setAlpha:0.0];
+                                              [self.secretLabel setTransform:CGAffineTransformMakeScale(0.5, 0.5)];
+                                              
+                                              
+                                          } completion:^(BOOL finished) {
+                                              
+                                              
+                                              
+                                              
+                                              
+                                              
+                                          }];
+
+                         
+                     }];
+    
+
+    
+    
     
 }
 
