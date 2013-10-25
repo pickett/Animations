@@ -84,10 +84,9 @@
 
 - (IBAction)signInPressed:(id)sender {
     
-    [self awesomeCheck];
+    [self basicCheck];
     
 }
-
 
 - (void)basicCheck{
     
@@ -100,7 +99,7 @@
     [self.activitySpinner startAnimating];
     
     // simulate checking a web service
-    [self performSelector:@selector(crazyFail) withObject:nil afterDelay:1.5];
+    [self performSelector:@selector(basicFail) withObject:nil afterDelay:1.5];
     
 }
 
@@ -128,7 +127,7 @@
     
     [self.activitySpinner startAnimating];
 
-    [self performSelector:@selector(crazyFail) withObject:nil afterDelay:1.5];
+    [self performSelector:@selector(awesomeFail) withObject:nil afterDelay:1.5];
 
 }
 
@@ -253,14 +252,17 @@
     
 }
 
-
 - (void)crazyFail{
     
-    
+    // Set up the UIDynamic Animator
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
+    // Set up a collision behavior
     UICollisionBehavior *collisionBehaviour = [[UICollisionBehavior alloc] initWithItems:@[self.forgotPasswordButton, self.textFieldView, self.signInButton, self.activitySpinner]];
+    
     [collisionBehaviour setCollisionMode:UICollisionBehaviorModeBoundaries];
+    
+    // Make sure you translate the reference bounds into the boundary
     collisionBehaviour.translatesReferenceBoundsIntoBoundary = YES;
 
     [self.animator addBehavior:collisionBehaviour];
@@ -268,11 +270,13 @@
     
     NSArray *array = @[self.forgotPasswordButton, self.textFieldView, self.signInButton, self.activitySpinner];
     
+    // Iteratre through our objects
     for (NSObject *obj in array) {
      
-        
+        // Create an instantaneous push behavior
         UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[obj] mode:UIPushBehaviorModeInstantaneous];
         
+        // set a random angle
         pushBehavior.angle = (float)rand();
         pushBehavior.magnitude = 5.0f;
         
@@ -284,11 +288,10 @@
     }
   
 
-    [self performSelector:@selector(secretMethod) withObject:Nil afterDelay:0.3];
+    //[self performSelector:@selector(secretMethod) withObject:Nil afterDelay:0.3];
 
     
 }
-
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
     
