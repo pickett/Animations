@@ -1,7 +1,7 @@
 Animations
 ==========
 
-A repository from my 360iDev Speech "Gratuitous Animations How Subtlety in User Experience Design can Impress Your Users and Apple"
+A repository from my talk "Gratuitous Animations How Subtlety in User Experience Design can Impress Your Users and Apple"
 
 Animations can make or break the user experience of a mobile app. It is important when building apps to remember that animations can be a powerfultool and can often do more for a user's experience than the interfaces they inhabit.
 
