@@ -20,7 +20,7 @@ Also keep in mind this *doesn't work on th 3.5 inch simulator and only the 4*.
 
 ## Keynote Download
 
-If you want to download my keynote deck, you can do so here: http://bit.ly/iOS-Animations-Keynote
+If you want to download my keynote deck, you can do so here: http://bit.ly/iOS-Animations-Slides
 
 ## Contact
 
